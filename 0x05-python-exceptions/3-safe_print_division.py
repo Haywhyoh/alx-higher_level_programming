@@ -2,8 +2,8 @@
 def safe_print_division(a, b):
     try:
         div = a/b
+        return(div)
     except (ZeroDivisionError, FloatingPointError):
         div = None
     finally:
-        print("Insode result: {}".format(div))
-    return div
+        print("Inside result: {}".format(div))
