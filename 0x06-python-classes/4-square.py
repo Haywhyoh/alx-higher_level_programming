@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-    Class to create a ssquare
-"""
+"""Class to create a ssquare"""
 
 
 class Square:
