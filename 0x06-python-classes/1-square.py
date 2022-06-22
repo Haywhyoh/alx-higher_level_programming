@@ -6,6 +6,5 @@ class Square:
         """Initialize the instance of a square
 
         Args:
-            param1 (size): size of a square
-        """
+            param1 (size): size of a square"""
         self.__size = size
