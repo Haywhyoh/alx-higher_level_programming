@@ -5,9 +5,12 @@
 class Square:
     """ A class to define square properties."""
 
-    def __init(self, size=0):
+    def __init(self, size):
         """
             Method to initialize size
+
+            Args:
+                size(int): The size of the squre
         """
         self.__size = size
 
