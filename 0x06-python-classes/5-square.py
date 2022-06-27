@@ -5,9 +5,7 @@
 
 
 class Square:
-    """
-        A class to define square properties
-    """
+    """ A class to define square properties."""
 
     def __init(self, size=0):
         """
