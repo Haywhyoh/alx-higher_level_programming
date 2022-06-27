@@ -4,7 +4,7 @@
 """
 
 
-Class Square:
+class Square:
     """
         A class to define square properties
     """
