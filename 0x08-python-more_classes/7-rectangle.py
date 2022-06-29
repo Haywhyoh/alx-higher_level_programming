@@ -58,7 +58,7 @@ class Rectangle:
         """Print the rectangle with #"""
         if self.__height == 0 or self.__width == 0:
             return ''
-        hash_width = Rectangle.print_symbol * self.__width
+        hash_width = "{}".format(self.print_symbol) * self.__width
         return '\n'.join((hash_width) for height in range(self.__height))
 
     def __repr__(self):
