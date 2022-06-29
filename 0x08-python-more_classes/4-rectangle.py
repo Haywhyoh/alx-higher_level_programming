@@ -58,6 +58,6 @@ class Rectangle:
         return '\n'.join((hash_width) for height in range(self.__height))
 
     def __repr__(self):
-        """Returns a string representation of 
+        """Returns a string representation of
         the rectangle instance"""
         return 'Rectangle({}, {})'.format(self.__width, self.__height)
