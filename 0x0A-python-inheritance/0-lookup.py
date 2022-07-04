@@ -6,5 +6,7 @@ def lookup(obj):
         Args:
             obj: The object class parameter
 
-        Returns: List of the method and attributes."""
+        Returns: List of the method and attributes.
+    """
+
     return(dir(obj))
