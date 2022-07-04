@@ -2,10 +2,8 @@
 """The module or an obj class"""
 
 
-"""The class creates an instance obj."""
-
 def is_same_class(obj, a_class):
-    """Function checks if the object is exactly 
+    """Function checks if the object is exactly
     an instance of the specified class.
 
     Args:
