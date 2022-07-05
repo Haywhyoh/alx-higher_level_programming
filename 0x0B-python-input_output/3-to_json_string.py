@@ -1,14 +1,15 @@
 #!/usr/bin/python3
+import json
 """Input and output python module."""
 
 
-def append_write(filename="", text=""):
-    """ Function that appends a string at the end of a text file (UTF8)
-        and returns the number of characters added.
+def to_json_string(my_obj):
+    """ Function that returns the JSON representation
+        of an object (string):
 
         Args:
-            filename: the name of the file to be read.
-            text: the text to be written into the file.
+            my_obj: the object to be converted
 
         Returns:
-            numbers of characters written."""
+            JSON representation of the my_obj."""
+    return (json.dumps(my_obj))
