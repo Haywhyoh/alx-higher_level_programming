@@ -2,9 +2,9 @@
 """Input and output python module."""
 
 
-def write_file(filename="", text=""):
-    """ Function that writes a string to a text file (UTF8)
-        and returns the number of characters written:
+def append_write(filename="", text=""):
+    """ Function that appends a string at the end of a text file (UTF8)
+        and returns the number of characters added.
 
         Args:
             filename: the name of the file to be read.
@@ -12,3 +12,5 @@ def write_file(filename="", text=""):
 
         Returns:
             numbers of characters written."""
+    with open(filename, mode='a', encoding='utf-8') as file:
+        return (file.write(text))
