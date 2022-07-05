@@ -3,12 +3,13 @@ import json
 """Input and output python module."""
 
 
-def to_json_string(my_obj):
-    """ Function that returns the JSON representation
-        of an object (string):
+def from_json_string(my_str):
+    """ Function that returns an object (Python data structure)
+        represented by a JSON string.
 
         Args:
-            my_obj: the object to be converted
+            my_str: the string to be converted
 
         Returns:
-            JSON representation of the my_obj."""
+            an object (Python data structure."""
+    return json.loads(my_str)
