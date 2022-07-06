@@ -23,5 +23,5 @@ class Student:
 
         if not (isinstance(attrs[elem], str) for elem in attrs):
             return self.__dict__
-        return({key : value for key, value in self.__dict__.item() 
+        return({key : value for key, value in self.__dict__.item()
                 if key in attrs})
