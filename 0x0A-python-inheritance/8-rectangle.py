@@ -1,6 +1,6 @@
 #1/usr/bin/python3
-"""A module for Rectangular operations"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+"""A module for Rectangular operations"""
 
 
 class Rectangle(BaseGeometry):
@@ -16,4 +16,3 @@ class Rectangle(BaseGeometry):
         self.__width__ = width
         self.integer_validator('height', height)
         self.__height__ = height
-
