@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """A module for Rectangular operations"""
-
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
     """A class to create and manipulate rectangle object"""
