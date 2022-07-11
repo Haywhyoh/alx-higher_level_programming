@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-Base = __import__('base.py').Base
+from models.base import Base
 
 class Rectangle(Base):
 
@@ -14,9 +14,15 @@ class Rectangle(Base):
     @property
     def width(self):
         return(self.__width)
-    
+
     @width.setter
     def width(self, width):
+        if isinstance(width, int):
+            raise TypeError('width must be an integer')
+        
+        if width <= 0:
+            raise ValueError('width must be > 0')
+
         self.__width = width
 
     @property
@@ -25,6 +31,11 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
+        if isinstance(height, int):
+            raise TypeError('height must be an integer')
+
+        if height <= 0:
+            raise ValueError('height must be > 0')
         self.__height = height
 
     @property
@@ -33,6 +44,9 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
+
+        if x < 0:
+            raise ValueError('x must be >= 0')
         self.__x = x
     
     @property
@@ -41,5 +55,9 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
+        if y < 0:
+            raise ValueError('y must be >= 0')
         self.__y = y
 
+    def area(self):
+        return (self.__width * self.__height)
