@@ -1,5 +1,5 @@
 -- write some full sql script
-CREATE IF NOT EXISTS TABLE second_table
+CREATE TABLE IF NOT EXISTS second_table
 (
     `id` INT,
     `name` VARCHAR(256),
