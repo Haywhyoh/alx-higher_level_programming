@@ -1,3 +1,3 @@
 --list all the record from second_table
-SELECT * FROM `score`, `name`
+SELECT `score`, `name` FROM `second_table`
 ORDER BY `score` DESC;
