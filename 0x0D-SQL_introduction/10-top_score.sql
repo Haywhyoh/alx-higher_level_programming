@@ -1,3 +1,3 @@
---list all the record from second_table
+-- list all the record from second_table
 SELECT `score`, `name` FROM `second_table`
 ORDER BY `score` DESC;
