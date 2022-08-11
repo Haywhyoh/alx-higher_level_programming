@@ -3,4 +3,5 @@ CREATE TABLE IF NOT EXIST
 (
     id INT,
     name VARCHAR(256)
+    NOT NULL
 ) force_name;
