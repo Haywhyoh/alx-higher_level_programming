@@ -1,7 +1,6 @@
 #!/usr/bin/node
 const myVar = process.argv[2];
-const argLength = process.argv.length;
-if (argLength < 3) {
+if (myVar === undefine) {
   console.log('No argument');
 } else {
   console.log(myVar);
