@@ -15,7 +15,7 @@ module.exports = class Rectangle {
 
       rotate () {
         this.width = this.height;
-        this.height = weight;
+        this.height = this.weight;
       };
 
       double () {
