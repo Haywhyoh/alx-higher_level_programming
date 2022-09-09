@@ -11,7 +11,7 @@ database = sys.argv[3]
 if __name__ == "__main__":
     db = MySQLdb.connect(host='localhost', user=username, passwd=password, port=3306, db=database)
     cur = db.cursor()
-    cur.execute("USE hbtn_0e_0_usa, 'SELECT * FROM states, ORDER BY id ASC")
+    cur.execute("SELECT * FROM states, ORDER BY id ASC")
     states = cur.fetchall()
     for state in states:
         print(state)
