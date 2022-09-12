@@ -12,6 +12,7 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states WHERE name LIKE '%N' ORCER BY ASC")
 
     for state in cur.fetchall():
-        print(state)
-    
+        if state[1]["N"]:
+            print(state)
+
     db.close()
