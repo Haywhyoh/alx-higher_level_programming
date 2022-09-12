@@ -13,7 +13,6 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC", (argv[4],))
 
     for state in cur.fetchall():
-        if state[1] == argv[4]:
-            print(state)
+        print(state)
 
     db.close()
