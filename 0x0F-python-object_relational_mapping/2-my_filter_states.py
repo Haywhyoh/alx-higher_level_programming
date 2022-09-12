@@ -1,30 +1,17 @@
 #!/usr/bin/python3
-"""lists all states from database hbtn_0e_0_usa starting with N"""
+"""
+lists all states from database hbtn_0e_0_usa starting with N
+"""
 import sys
 import MySQLdb
 
-
-def main(argv):
-
-    if len(argv) - 1 != 4:
-        print("Must enter 4 arguments")
-        return
-
-    db = MySQLdb.connect(host="localhost",
-                         user=argv[1],
-                         passwd=argv[2],
-                         db=argv[3],
-                         port=3306)
+if __name__ == "__main__":
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name = '{}'".format(argv[4]))
+    cur.execute("SELCET * FROM states WHERE name = {} ORDER BY id".format(sys.argv[4]))
 
-    for row in cur.fetchall():
-        if row[1] == argv[4]:
-            print(row)
+    for state in cur.fetchall():
+        if state[1] == sys.argv[4]:
+            print(state)
 
     db.close()
-
-
-if __name__ == "__main__":
-    import sys
-    main(sys.argv)
