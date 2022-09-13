@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Prints the first State object from the database hbtn_0e_6_usa.
+"""Prints the first State object from the database hbtn_0e_6_usa.
 model_state_fetch_first.py <mysql username> /
                             <mysql password> /
                             <database name>
