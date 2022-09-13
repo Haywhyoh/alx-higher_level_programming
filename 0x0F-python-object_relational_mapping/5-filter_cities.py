@@ -10,7 +10,6 @@ if __name__ == '__main__':
                          db=argv[3], port=3306)
 
     cur = db.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name FROM cities \
-        INNER JOIN states ON cities.states_id = states.id WHERE states.name = '{}';".format(argv[4]))
+    cur.execute("SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.states_id = states.id WHERE states.name = '{}';".format(argv[4]))
     
     print(", ".join([state[1] for state in cur.fetchall()]))
