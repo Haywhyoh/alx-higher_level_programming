@@ -4,7 +4,6 @@ model_state_fetch_first.py <mysql username> /
                             <mysql password> /
                             <database name>
 """
-from logging import NullHandler
 import sys
 from model_state import Base, State
 from sqlalchemy.orm import create_engine
