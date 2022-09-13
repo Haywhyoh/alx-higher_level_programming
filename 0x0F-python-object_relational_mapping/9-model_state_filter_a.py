@@ -3,7 +3,7 @@ This is a documentations
 So be careful with the text
 """
 import sys
-from models_state import Base, State
+from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
