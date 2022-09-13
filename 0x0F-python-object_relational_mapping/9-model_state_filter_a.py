@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 This is a documentations
 So be careful with the text
