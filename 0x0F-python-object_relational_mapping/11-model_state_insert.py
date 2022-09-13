@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-This is what we discovered about it
+This is some docs i'm not interested in
+I just have to write it for the guy who will
+copy this code later
 """
 import sys
 from sqlalchemy.orm import sessionmaker
