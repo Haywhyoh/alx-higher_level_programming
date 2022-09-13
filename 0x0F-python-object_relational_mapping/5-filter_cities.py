@@ -11,5 +11,5 @@ if __name__ == '__main__':
 
     cur = db.cursor()
     cur.execute("SELECT cities.id, cities.name, states.name FROM cities JOIN states ON cities.states_id = states.id WHERE states.name = '{}';".format(argv[4]))
-    
-    print(", ".join([state[1] for state in cur.fetchall()]))
+    states = cur.fetchall()
+    print(", ".join([state[1] for state in states]))
