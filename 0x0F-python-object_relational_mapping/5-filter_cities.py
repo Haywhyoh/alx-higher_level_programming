@@ -14,7 +14,5 @@ if __name__ == "__main__":
                 INNER JOIN states ON states.id = cities.state_id WHERE states.name = %s", (argv[4],))
 
     (", ".join ([state[1] for state in cur.fetchall()]))
-    
-    db.close()
-    
 
+    db.close()
