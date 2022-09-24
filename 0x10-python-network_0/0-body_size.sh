@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #Script that shpws the Content-Length from a HTTP request
 curl -sI  "$1" | grep "Content-Length" | cut -d " " -f 2
