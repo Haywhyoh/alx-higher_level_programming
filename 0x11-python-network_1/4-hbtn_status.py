@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """fetches status of https://intranet.hbtn.io/status"""
-import sys
 import requests
 
 r = requests.get('https://intranet.hbtn.io/status')
