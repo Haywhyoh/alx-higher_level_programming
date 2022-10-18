@@ -1,12 +1,11 @@
 #!/usr/bin/node
-/*
-reads a file and prints the contents
-*/
+
 const fs = require('fs');
 const file = process.argv[2];
-fs.readFile(file, 'uf8', (err, data) => {
+
+fs.readFile(file, 'utf-8', function (err, data) {
   if (err) {
-    console.error(err);
+    console.log(err);
   } else {
     console.log(data);
   }
